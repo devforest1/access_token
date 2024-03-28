@@ -1,8 +1,11 @@
 package com.study.signin.common.dto;
 
 import com.study.signin.common.status.ResultCode;
-import org.springframework.http.HttpStatus;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class BaseResponse<T> {
     // 상태 코드
     private final ResultCode status;

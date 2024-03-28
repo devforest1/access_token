@@ -1,12 +1,13 @@
 package com.study.signin.api.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import lombok.Builder;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
+@AllArgsConstructor
 public class MemberDto {
     // 사용자 ID
     @NotBlank
@@ -19,12 +20,4 @@ public class MemberDto {
     private String name;
     // 사용자 이메일
     private String email;
-
-    @Builder
-    public MemberDto(String loginId, String password, String name, String email) {
-        this.loginId = loginId;
-        this.password = password;
-        this.name = name;
-        this.email = email;
-    }
 }

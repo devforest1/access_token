@@ -32,7 +32,7 @@ public class Member {
     private String name;
 
     // 사용자 이메일
-    @Column(name = "email", nullable = false)
+    @Column(name = "email")
     private String email;
 
     // 생성일시
